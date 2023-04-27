@@ -20,7 +20,8 @@ streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado',
 # Display the table on the page.
 
 import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+ "kiwi")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+ 
+fruit_choice)
 streamlit.text(fruityvice_response)
 streamlit.header("Fruityvice Fruit Advice!")
 
